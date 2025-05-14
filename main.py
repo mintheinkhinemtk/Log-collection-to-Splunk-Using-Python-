@@ -23,7 +23,7 @@ with open('ABUSEIPDB_IPs.csv','r') as IP_f:
 
 #splunk_server
 splunk_url = 'http://127.0.0.1:8088/services/collector/event'
-HEC_token = 'f96dc8e3-2282-4359-ba1a-576d82a3db3a'
+HEC_token = 'your-Splunk-HEC-token'
 
 splunk_headers = {'Authorization':f'Splunk {HEC_token}',
                   'Content-Type':'application/json'}
@@ -33,7 +33,7 @@ splunk_headers = {'Authorization':f'Splunk {HEC_token}',
 #virustotal
 headers = {
         "accept": "application/json",
-        "x-apikey": "279447cfdf54a64872f95e70a34e881ee9d244c40afb2850d7c30b60dae0c919"
+        "x-apikey": "your-virustotal-api-key"
     }
 import_results = [] # data imported from api response of virustotal
 for i in range(len(IP)):
