@@ -13,6 +13,8 @@ def sent(ip):
     with open('collected_IPs.txt','r') as f:
         if ip in f.read().splitlines():
             return True
+        else:
+            return False
 
 
 with open('ABUSEIPDB_IPs.csv','r') as IP_f:
