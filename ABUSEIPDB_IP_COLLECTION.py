@@ -10,7 +10,7 @@ parameters = {
 
 headers = {
     'Accept': 'application/json',
-    'Key': 'ac542df0b376dfd3af483f258e482526bdd200cb0dcfc4d972dc5dbd664a6f4a730128d0b2cedc51'
+    'Key': 'abuseipdb-key'
 }
 
 response = requests.request(method='GET', url=url, headers=headers, params=parameters)
