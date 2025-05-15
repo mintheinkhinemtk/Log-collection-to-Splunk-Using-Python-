@@ -80,7 +80,7 @@ for i in range(len(IP)):
         print(f"HEC response = {HEC_response.status_code}")
         with open('collected_IPs.txt','a') as md:
             md.write(f'{IP[i]}\n')
-        time.sleep(20)
+        time.sleep(20) # keeping in the range of api request limitation from virustotal api docs, important
     else:
         print(f'Dats is not collected.\nstatus code is {response.status_code}, and IP Address = {IP[i]}')
 
