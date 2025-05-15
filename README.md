@@ -10,4 +10,6 @@
 
 #From this step, run main.py for inputting IP Input with the ones from your csv to virustotal api and send the necessary response as json to local your splunk server using its HEC token
 
+#Another important thing from virustotal api documentation, virustotal api rate limit is 4 requests per minute. You need to time use suitable time delay after each automation.
+
 # You need to generate HEC token from your local splunk server as the data is collected using http protocol
